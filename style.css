@@ -5,8 +5,86 @@
 
 html,
 body {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/* Add styles here! */
+body {
+  background-color: var(--color-gray-light);
+}
+
+header {
+  padding-top: var(--spacing-96);
+  background-color: var(--color-white);
+  padding-bottom: var(--spacing-48);
+}
+
+.max-width-wrapper {
+  max-width: 540px;
+  margin: auto;
+}
+
+.intro-chunk {
+  margin-right: var(--spacing-96);
+  padding-left: var(--spacing-24);
+}
+
+.intro-chunk > p {
+  font-size: var(--font-lg);
+}
+
+.intro-chunk > p > strong {
+  color: var(--color-primary);
+}
+
+.title {
+  margin-bottom: var(--spacing-48);
+}
+
+main {
+  border-top: 8px solid var(--color-gray-medium);
+  padding: var(--spacing-64) 0;
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: var(--spacing-24);
+  padding-top: var(--spacing-8);
+  border-bottom: 8px solid var(--color-gray-medium);
+}
+
+.indented-heading {
+  background-color: var(--color-secondary-light);
+  padding: var(--spacing-24) var(--spacing-48);
+  margin: 0;
+  margin-left: calc(-1 * var(--spacing-48));
+  max-width: max-content;
+  border-bottom: 8px solid var(--color-secondary-dark);
+}
+
+:root {
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-xxl: 2rem;
+
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-gray-very-dark: hsl(0deg, 0%, 10%);
+  --color-gray-dark: hsl(0deg, 0%, 30%);
+  --color-gray-medium: hsl(0deg, 0%, 40%);
+  --color-gray-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
